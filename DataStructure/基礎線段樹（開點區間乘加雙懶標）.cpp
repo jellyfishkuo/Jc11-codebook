@@ -7,7 +7,7 @@ long long st[maxn << 2], mul[maxn << 2], add_tag[maxn << 2], data[maxn];
 long long mod;
 
 void push_up(int i) { 
-    st[i] = (st[i << 1] + st[i << 1 | 1]) % mod; }
+    st[i]=(st[i<<1]+st[i<<1|1])%mod; }
 
 void build(int l, int r, int i) {
     mul[i] = 1; add_tag[i] = 0;
